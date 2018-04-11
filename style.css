@@ -4,11 +4,24 @@ body {
 	background-color: #000000;
 }
 /* responsive font-size */
-h1 {
+h1, #learn-more {
 	font-size: 1.0em;
 }
+
+
 .display-2 {
 	font-size: 2.6em;
+}
+
+.line {
+	width: 5%;
+	height: 3px;
+	border-radius: 2px;
+	background-color: #007bff;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media (min-width: 48em) {
@@ -18,6 +31,10 @@ h1 {
 	.display-2 {
 		font-size: 5.2em;
 	}
+	
+	.btn-primary {
+		font-size: 1.0em;
+	}
 }
 /* Large devices (desktops, 62em and up) */
 @media (min-width: 62em) {
@@ -25,12 +42,18 @@ h1 {
 	body {
 		font-size: 14px !important;
 	}
+	.btn-primary {
+		font-size: 10px;
+	}
 }
 /* Extra large devices (large desktops, 75em and up) */
 @media (min-width: 75em) {
 	html,
 	body {
 		font-size: 16px !important;
+	}
+	.btn-primary {
+		font-size: 1.0em;
 	}
 }
 
@@ -44,7 +67,6 @@ h1 {
 	 text-align: center;
 	 color: white;
  }
-
  
 /* Centered text */
 .centered {
@@ -53,12 +75,17 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#learn-more {
+
+
+
+.btn-primary {
     position: absolute;
-    top: 90%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
+	
 }
-#learn-more:hover {
+
+.btn-primary:hover {
 	color: #051C38;
 }
